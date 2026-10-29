@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Sorveteria Dima Negro | Sorvetes artesanais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrap bar">
+            <a href="#inicio" class="logo">🍦 Dima Negro</a>
+            <nav><a href="#inicio">Início</a><a href="#cardapio">Cardápio</a><a href="#historia">Nossa história</a><a
+                    href="#ocasioes">Ocasiões</a><a href="#contato">Contato</a></nav>
+            <div style="display:flex;gap:10px;align-items:center"><button class="tog" id="tog"
+                    aria-label="Alternar tema">🌙</button><a href="#cardapio" class="btn" style="padding:10px 20px">Ver
+                    sabores</a></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero" id="inicio">
+            <div class="wrap">
+                <div>
+                    <span class="tag">Sorvetes artesanais ✨</span>
+                    <h1>O que é bom merece ser compartilhado</h1>
+                    <p>Monte o seu copo no buffet, com sorvete feito de fruta de verdade, açaí, picolés e potes para
+                        levar para casa.</p>
+                    <div class="row"><a href="#cardapio" class="btn">Ver cardápio</a><a href="#historia"
+                            class="btn out">Conheça a Dima Negro</a></div>
+                </div>
+                <svg viewBox="0 0 300 380" aria-hidden="true">
+                    <path d="M95 190 L150 365 L205 190 Z" fill="#f4b86a" />
+                    <path d="M110 190 L150 320 M130 190 L170 335 M150 190 L190 300 M170 190 L130 300" stroke="#d98f3e"
+                        stroke-width="3" fill="none" opacity=".6" />
+                    <circle cx="150" cy="185" r="62" fill="#fff" />
+                    <circle cx="110" cy="130" r="55" fill="#ffd1e6" />
+                    <circle cx="195" cy="125" r="52" fill="#fff0f7" />
+                    <circle cx="150" cy="82" r="50" fill="#ff8cc0" />
+                    <path d="M92 190q15 22 30 0q15 24 30 0q15 22 30 0q15 20 28 0" fill="#fff" />
+                    <circle cx="150" cy="30" r="13" fill="#d6004f" />
+                    <path d="M150 18q8-14 20-12" stroke="#4a8a3c" stroke-width="4" fill="none" />
+                    <g fill="#fff" opacity=".9">
+                        <circle cx="130" cy="75" r="5" />
+                        <circle cx="170" cy="95" r="4" />
+                        <circle cx="108" cy="140" r="4" />
+                        <circle cx="205" cy="135" r="5" />
+                    </g>
+                </svg>
+            </div>
+            <svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M0 30 Q180 70 360 30 T720 30 T1080 30 T1440 30 V60 H0Z" />
+            </svg>
+        </div>
+
+        <section>
+            <div class="wrap center rv">
+                <span class="eyebrow">Um buffet de sorvetes</span>
+                <h2>Escolha, monte e se encante</h2>
+                <p class="lead">Aqui você monta o seu copo com a variedade que quiser, além de picolés, açaís e potes
+                    para levar. Tudo feito com fruta de verdade e com opções para todos os gostos.</p>
+                <div class="feats">
+                    <div class="feat"><i>🍓</i><b>Fruta de verdade</b><span>Sem gordura hidrogenada</span></div>
+                    <div class="feat"><i>🥛</i><b>Zero lactose</b><span>Opções para você saborear</span></div>
+                    <div class="feat"><i>🍬</i><b>Sem adição de açúcar</b><span>Opções selecionadas</span></div>
+                    <div class="feat"><i>🌱</i><b>Veganos</b><span>Sem ingredientes de origem animal</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="cardapio">
+            <div class="wrap">
+                <div class="center rv">
+                    <span class="eyebrow">Cardápio</span>
+                    <h2>Nossos sabores</h2>
+                    <p class="lead">Do clássico ao inusitado. A cada visita, uma nova descoberta.</p>
+                    <div class="tabs" id="tabs"></div>
+                </div>
+                <div class="center" style="margin-top:6px"><input class="search" id="q" type="search"
+                        placeholder="Buscar sabor…" aria-label="Buscar sabor"></div>
+                <div class="chips center" id="chips" style="justify-content:center"></div>
+                <div class="grid" id="grid"></div>
+                <p class="center lead" style="margin:30px auto 0;font-size:.9rem">O cardápio varia conforme a
+                    disponibilidade do dia. Pergunte na loja pelas novidades.</p>
+            </div>
+        </section>
+
+        <section id="historia">
+            <div class="wrap story">
+                <div class="rv">
+                    <span class="eyebrow">Nossa história</span>
+                    <h2>Feito com cuidado, servido com carinho</h2>
+                    <p class="lead">Transformamos momentos simples em memórias deliciosas. Da escolha dos ingredientes
+                        ao preparo artesanal, cada sorvete reflete a nossa paixão por criar experiências que aquecem o
+                        coração.</p>
+                    <p class="lead"><b style="color:var(--pink)">Missão:</b> encantar pessoas com sorvetes artesanais de
+                        qualidade.</p>
+                </div>
+                <div class="vals rv">
+                    <div class="val"><b>Artesanalidade</b>
+                        <p>Feito com cuidado e tradição.</p>
+                    </div>
+                    <div class="val"><b>Excelência</b>
+                        <p>Sempre buscando o melhor.</p>
+                    </div>
+                    <div class="val"><b>Inovação</b>
+                        <p>Criar sem perder a essência.</p>
+                    </div>
+                    <div class="val"><b>Encantamento</b>
+                        <p>Surpreender em cada visita.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="ocasioes">
+            <div class="wrap center rv">
+                <span class="eyebrow">Para todo momento</span>
+                <h2>Toda ocasião merece um sorvete</h2>
+                <p class="lead">No copinho, na casquinha ou em potes grandes para dividir com a família.</p>
+                <div class="occ">
+                    <div class="o"><span>👨‍👩‍👧</span>
+                        <h3>Compartilhar em família</h3>
+                        <p>Sempre presente nos momentos felizes</p>
+                    </div>
+                    <div class="o"><span>🎂</span>
+                        <h3>Celebrar datas especiais</h3>
+                        <p>Aniversários e comemorações</p>
+                    </div>
+                    <div class="o"><span>💕</span>
+                        <h3>Um sorvete a dois</h3>
+                        <p>Uma pausa gostosa com quem você ama</p>
+                    </div>
+                    <div class="o"><span>🏠</span>
+                        <h3>Levar para casa</h3>
+                        <p>Potes com porções generosas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="wrap">
+                <div class="cta rv">
+                    <h2>Não derreta esperando</h2>
+                    <p>Venha provar a Dima Negro e descubra o seu sabor favorito.</p>
+                    <a href="#cardapio" class="btn">Ver o cardápio</a>
+                </div>
+                <div class="ct">
+                    <div class="c"><b>📍 Endereço</b><span>Adicione aqui o endereço da loja</span></div>
+                    <div class="c"><b>🕒 Horário</b><span>Adicione aqui o horário de funcionamento</span></div>
+                    <div class="c"><b>💬 WhatsApp</b><span>Adicione aqui o número de contato</span></div>
+                    <div class="c"><b>📷 Instagram</b><span>Adicione aqui o @ da sorveteria</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrap">
+            <div class="logo" style="color:#fff">🍦 Dima Negro</div><small>Sorvetes artesanais · © 2026 Sorveteria Dima
+                Negro. Todos os direitos reservados.</small>
+        </div>
+    </footer>
+
+    <script>
+        const D = [
+            ["Sorvetes", "Morango", "Fruta de verdade, cremoso", "🍓", ["fruta"]],
+            ["Sorvetes", "Chocolate belga", "Intenso e aveludado", "🍫", ["cremoso"]],
+            ["Sorvetes", "Ninho com Nutella", "O queridinho da casa", "🥄", ["cremoso"]],
+            ["Sorvetes", "Pistache", "Com pedacinhos de pistache", "🌰", ["cremoso"]],
+            ["Sorvetes", "Maracujá", "Azedinho na medida", "🍈", ["fruta"]],
+            ["Sorvetes", "Limão siciliano", "Refrescante", "🍋", ["fruta"]],
+            ["Sorvetes", "Coco queimado", "Com calda caramelizada", "🥥", ["cremoso"]],
+            ["Sorvetes", "Flocos", "Clássico de chocolate crocante", "🍨", ["cremoso"]],
+            ["Sorvetes", "Passas ao rum", "Com passas selecionadas", "🍇", ["cremoso"]],
+            ["Sorvetes", "Doce de leite", "Cremoso, com ribbons", "🍮", ["cremoso"]],
+            ["Sorvetes", "Manga", "Polpa de verdade", "🥭", ["fruta", "lactose"]],
+            ["Sorvetes", "Abacaxi com hortelã", "Leve e aromático", "🍍", ["fruta", "vegano"]],
+            ["Zero & veganos", "Açaí vegano", "Sem origem animal", "🫐", ["vegano", "lactose"]],
+            ["Zero & veganos", "Chocolate zero açúcar", "Sem adição de açúcares", "🍫", ["acucar", "lactose"]],
+            ["Zero & veganos", "Morango zero lactose", "Cremoso e leve", "🍓", ["lactose"]],
+            ["Zero & veganos", "Coco vegano", "Cremoso de coco", "🥥", ["vegano", "lactose"]],
+            ["Zero & veganos", "Baunilha zero açúcar", "Clássico sem adição de açúcares", "🍦", ["acucar"]],
+            ["Zero & veganos", "Limão vegano", "Sorbet refrescante", "🍋", ["vegano", "lactose"]],
+            ["Açaís", "Açaí tradicional", "Com banana e granola", "🫐", []],
+            ["Açaís", "Açaí com morango", "Cremoso e frutado", "🍓", []],
+            ["Açaís", "Açaí com leite ninho", "Para quem ama doce", "🥛", []],
+            ["Açaís", "Açaí zero", "Sem adição de açúcares", "🌿", ["acucar"]],
+            ["Picolés", "Picolé de morango", "Pedacinhos de fruta", "🍓", ["fruta"]],
+            ["Picolés", "Picolé de chocolate", "Cobertura crocante", "🍫", ["cremoso"]],
+            ["Picolés", "Picolé de coco", "Cremoso e gelado", "🥥", ["cremoso"]],
+            ["Picolés", "Picolé de limão", "Refrescante", "🍋", ["fruta", "lactose"]],
+            ["Potes", "Pote 1 litro", "Escolha seu sabor", "🥡", []],
+            ["Potes", "Pote 2 litros", "Para dividir com a família", "🏠", []]
+        ];
+        const L = { fruta: "Fruta de verdade", cremoso: "Cremoso", lactose: "Zero lactose", acucar: "Sem açúcar", vegano: "Vegano" };
+        const cats = ["Todos", ...new Set(D.map(d => d[0]))];
+        let cat = "Todos", tag = "", term = "";
+        const $ = id => document.getElementById(id);
+        function mk(el, list, cur, fn, cls) { el.innerHTML = ""; list.forEach(([k, t]) => { const b = document.createElement("button"); b.className = cls + (cur === k ? " on" : ""); b.textContent = t; b.onclick = () => { fn(k); draw() }; el.appendChild(b) }) }
+        function draw() {
+            mk($("tabs"), cats.map(c => [c, c]), cat, k => cat = k, "tab");
+            mk($("chips"), [["", "Todos os tipos"], ...Object.entries(L)], tag, k => tag = k, "chip");
+            const n = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+            const r = D.filter(d => (cat === "Todos" || d[0] === cat) && (!tag || d[4].includes(tag)) && (!term || n(d[1] + " " + d[2]).includes(n(term))));
+            $("grid").innerHTML = r.length ? r.map(d => `<div class="item"><div class="dot">${d[3]}</div><div><h3>${d[1]}</h3><p>${d[2]}</p>${d[4].length ? `<div class="badges">${d[4].map(t => `<em>${L[t]}</em>`).join("")}</div>` : ""}</div></div>`).join("") : `<div class="empty">Nenhum sabor encontrado. Tente outra busca 🍦</div>`;
+        }
+        $("q").oninput = e => { term = e.target.value; draw() };
+        draw();
+        const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) } }), { threshold: .12 });
+        document.querySelectorAll(".rv").forEach(el => io.observe(el));
+        const root = document.documentElement, tg = $("tog");
+        tg.onclick = () => { const dark = getComputedStyle(root).colorScheme === "dark"; root.dataset.theme = dark ? "light" : "dark"; tg.textContent = dark ? "🌙" : "☀️" };
+        if (matchMedia("(prefers-color-scheme: dark)").matches) tg.textContent = "☀️";
+    </script>
+</body>
+
+</html>
